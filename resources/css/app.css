@@ -5,5 +5,39 @@
 
 @theme {
     --font-sans:
-        'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        'Ubuntu', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-ubuntu:
+        'Ubuntu', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('/font/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('/font/Ubuntu/Ubuntu-Italic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('/font/Ubuntu/Ubuntu-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('/font/Ubuntu/Ubuntu-BoldItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
 }
