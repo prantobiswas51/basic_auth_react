@@ -1,4 +1,4 @@
-import { usePage } from '@inertiajs/react'
+import { usePage, Link } from '@inertiajs/react'
 import { DoorOpen } from 'lucide-react'
 
 type PageProps = {
@@ -22,11 +22,11 @@ export default function Navigation() {
 
             <div className=""><div>
                 <li className="mr-4 inline-block">
-                <a href="/">Home</a>
-            </li>
+                    <a href="/">Home</a>
+                </li>
                 <li className="mr-4 inline-block">
                     <a href="/about">About</a>
-                </li> 
+                </li>
                 <li className="mr-4 inline-block">
                     <a href="/contact">Contact</a>
                 </li></div></div>
@@ -35,7 +35,9 @@ export default function Navigation() {
                 {user ? (
                     <li className="mr-4 inline-block">
                         <a href="/dashboard">Dashboard</a>
-                        <DoorOpen className="inline-block ml-2" />
+                        <Link href="/logout" method="post" className="ml-2">
+                            <DoorOpen className="inline-block ml-2 cursor-pointer" />
+                        </Link>
                     </li>
                 ) : (
                     <div>
